@@ -1,0 +1,523 @@
+html {
+	font-family: 'Oswald', sans-serif;
+}
+
+body {
+	max-width: 1280px;	
+}
+
+// colours
+$gold: rgb(192, 178, 131); 
+$palegold: rgba(192, 178, 131,0.7); 
+$paper: rgb(244, 244, 244);
+$charcoal: rgb(56, 56, 56);
+$lightcharcoal: rgba(56, 56, 56, 0.4);
+
+h2 {
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 15vh;
+	margin-left: 10vh;
+}
+
+img {
+	max-width: 100%;
+}
+
+.nav {
+	background-color: $palegold;
+	width:100%;
+	height:14vh;
+	overflow: hidden;
+	position: relative;
+	border-bottom: 8px solid $lightcharcoal;
+}
+
+.nav_video {
+	overflow: visible;
+}
+
+.video_logo {
+	width: 15vh;
+	position: absolute;
+	top:2vh;
+	right:2vh;
+}
+
+.flex_container {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	ul {
+		width: 100%;
+
+		li {
+			display: inline-block;
+			color: $charcoal;
+			font-size: 1rem;
+			margin-right: 10%;
+		  margin-left: 10%;
+		  padding-left: 5px;
+		  padding-right: 5px;
+			margin: auto;
+			border-bottom: 2px solid transparent;
+			transition: background-color 0.3s ease-in;
+			&:hover {
+				background-color: $paper;
+				padding-top: 5px;
+				padding-left: 5px;
+				padding-right: 5px;
+				border-radius: 4px;
+				border-bottom: 2px solid $charcoal;
+			}
+		}
+	}
+}
+
+.nav li::after {
+	content:" /";
+	font-size: 1.3rem;
+}
+
+.nav a {
+	text-decoration: none;
+	color: $charcoal;
+}
+
+.BNR_logo {
+	position: absolute;
+	top:0;
+	left:0;
+	animation:white_logo 3.5s cubic-bezier(0.4, 0, 0.3, 0.94);
+	animation-fill-mode:forwards;
+}
+
+.BNR_logo img{
+	width:18vh;
+	margin-top: 2vh;
+}
+
+@keyframes white_logo {
+  0% {
+      top:-1%;
+      left:0;
+  }
+
+  100% {
+      top:-1%;
+      left:87%;
+  }
+}
+
+.title_logo {
+	height:30vh;
+}
+
+.title_page{
+	height: 70vh;
+	background-color: white;
+}
+
+.banner {
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items: center;
+	h1 {
+	text-transform: uppercase;
+	}
+}
+
+// font awesome social icons
+.fa_icons {
+	height:15vh;
+	display: flex;
+	justify-content: center;
+	flex-direction:row;
+	align-items: center;
+	border-bottom:8px solid $lightcharcoal;
+	color: $charcoal;	
+	background-color: $palegold;
+	width:100%;
+	margin-bottom: 20vh;
+}
+
+.fa-3x {
+	padding:25px;
+	color: $charcoal;
+	transition:color 0.3s ease-in;
+	&:hover {
+		color:$paper;
+	}
+}
+
+//releases section
+
+.releases_flex_container {
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	height: 100%;
+	margin-bottom: 20vh;
+}
+
+.intentions, .thirty, .spandex_effect, .sequin_sunrise{
+	transition: border-radius 0.5s ease-in;
+	margin: 100px;
+	 &:hover {
+	 	border: 110px solid black;
+	  border-radius: 50%;
+  }
+}
+// Gallery section
+
+.intentions_img, .thirty_img, .spandex_effect_img, .sequin_sunrise_img {
+	margin:10vh;
+}
+
+figcaption {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: $charcoal;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid transparent;
+	transition: border 0.2s ease-in;
+	&:hover {
+		padding-right: 5px;
+		border-radius: 4px;
+		border-bottom: 4px solid $lightcharcoal;
+		border-right: 4px solid lighten($lightcharcoal,30);
+	}
+}
+.intentions_img {
+	position: relative;
+}
+
+.intentions_figcap {
+	position:absolute;
+	margin:0, auto;
+}
+
+.thirty_img {
+	position: relative;
+}
+
+.thirty_figcap {
+	position:absolute;
+	margin:0, auto;
+}
+
+.spandex_effect_img {
+ position: relative;
+}
+
+.spandex_effect_figcap {
+	position:absolute;
+	margin:0, auto;
+}
+
+.sequin_sunrise_img {
+ position: relative;
+}
+
+.sequin_sunrise_figcap {
+	position:absolute;
+	margin:0, auto;
+}
+
+.album_cover {
+	max-width:400px;
+	display: inline-block;
+	margin: auto;
+}
+
+.main_carousel {
+	height: 70vh;
+	margin-bottom: 20vh;
+	height: 70vh;
+	margin-top: 20vh;
+	padding-right: 2vh;
+	padding-left: 2vh;
+}
+
+.carousel_cell {
+  width: 50%; 
+  margin-right: 2vh;
+}
+
+.carousel_cell img {
+	width:100%;
+}
+
+// Video section
+
+
+.video_title {
+	padding-top: 10vh;
+}
+.video_section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}	
+
+.video_logo {
+	
+}
+
+.video_wrapper {
+	position: relative;
+	padding-bottom: 65%; 
+	padding-top: 25px;
+	height: 0;
+}
+
+.video_wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+}
+
+.soundcloud iframe {
+	margin:10vh;
+}
+
+// Connect section
+
+.connect_aside {
+	float: left;
+	width: calc(30% - 40px);
+	margin-left: 5vh;
+	padding-right: 5vh;
+	margin-top: 10vh;
+}
+
+.connect_aside p {
+	font-size: 2rem;
+	padding-left: 10%;
+}
+.form_text {
+	padding-top: 14vh;
+}
+
+.last_logo {
+	width:100%;
+}
+
+.my_form {
+	float: left;
+	width: 70%;
+	padding: 5vh;
+	padding-top: none;
+	margin-top: 10vh;
+}
+
+input {
+	box-shadow: 2px 2px 4px $lightcharcoal;
+	border:1px solid $charcoal;
+	border-radius: 4px;
+}
+
+input[type="text"]{
+	width:41%;
+	display: inline-block;
+ 	margin-bottom: 20px;
+ 	line-height: 15px;
+}
+
+input[type="email"]{
+	width:41%;
+	display: inline-block;
+  line-height: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  padding:5px 15px; 
+  background-color: $gold;  
+  margin-top: 2vh; 
+}
+
+.message {
+ box-shadow: 2px 2px 4px $lightcharcoal;
+ margin-top: 20px;
+ border:1px solid $charcoal;
+ border-radius: 4px;
+ width: 95%;
+ display: block;
+}
+
+.message:hover, .name_input:hover, .email_input:hover {
+	background-color: $paper;
+}
+
+.footer {
+	margin-bottom: 0;
+}
+footer {
+	padding-top: 10px;
+}
+
+// MEDIA QUERIES //
+
+/* Portrait tablet and small desktops */
+
+@media (max-width: 940px) {
+
+	@keyframes white_logo {
+    
+    100% {
+        left:84%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.nav {
+	height:18vh;
+	}
+
+	.fa_icons {
+	height:18vh;
+	}
+
+	.title_page {
+	height:64vh;
+	}
+
+	.nav li::after {
+	content:" /";
+	font-size: 1rem;
+	}
+	.title_logo {
+		height:35vh;
+	}
+
+	@keyframes white_logo {
+    
+    100% {
+        left:82%;
+    }
+	}
+
+	.carousel_cell {
+  width: 100%; 
+  margin-right: 2vh;
+	}
+
+	.video_wrapper iframe {
+	padding: 5%;
+	}
+
+	.last_logo {
+		width:100%;
+		margin-top: -5vh;
+	}
+	
+	input[type="text"]{
+	width:35%;
+	}
+
+	input[type="email"]{
+	width:35%;
+	}
+
+	.connect_aside p {
+	font-size: 1.2rem;
+	}
+
+	.form_text {
+	padding-top: 18vh;
+	}
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.nav {
+	height:20vh;
+	}
+
+	.flex_container li a {
+		font-size: 0.9rem;
+	}
+
+	.BNR_logo img{
+	width:16vh;
+	margin-top: 2vh;
+	}
+
+	.fa_icons {
+	height:20vh;
+	}
+
+	.title_page {
+	height:60vh;
+	}
+
+	@keyframes white_logo {
+    
+    100% {
+        left:75%;
+    }
+	}
+
+	.main_carousel {
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+	}
+
+	.connect_aside {
+	float: none;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+
+	.connect_aside p {
+	font-size: 2rem;
+	font-family: 'Oswald', sans-serif;
+	margin-left: none;
+	padding-left:none;
+	}
+
+	.form_text {
+	padding-top: 5vh;
+	}
+
+	.last_logo {
+	margin-left: none;
+	}
+
+	.last_logo img {
+		width: 100%;
+	}
+
+	.my_form {
+	float: none;
+	width: 100%;
+	padding: 5vh;
+	margin-top: 10vh;
+	}
+
+	input[type="text"]{
+	width:35%;
+ 	line-height: 10px;
+	}
+
+	input[type="email"]{
+	width:35%;
+  line-height: 10px;
+	}
+}
+}

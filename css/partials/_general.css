@@ -1,0 +1,26 @@
+html {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  max-width: 1280px;
+}
+
+h2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 15vh;
+  margin-left: 10vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+footer {
+  padding-top: 10px;
+}
