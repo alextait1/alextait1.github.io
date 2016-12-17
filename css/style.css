@@ -200,10 +200,14 @@ img {
 }
 
 .video_logo {
-  width: 15vh;
+  width: 16vh;
   position: absolute;
   top: 2vh;
-  right: 2vh;
+  right: 4vh;
+}
+
+h4 {
+  padding-left: 10vh;
 }
 
 .flex_container {
@@ -565,7 +569,6 @@ footer {
   }
   .last_logo {
     width: 100%;
-    margin-top: -5vh;
   }
   input[type="text"] {
     width: 35%;
@@ -617,7 +620,6 @@ footer {
   }
   .connect_aside p {
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
     margin-left: none;
     padding-left: none;
   }
